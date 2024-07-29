@@ -15,6 +15,30 @@
 >Get the coordinates of the obstacles it detects in robocentric.\
 >Get an image representation of the environment. '#' are the obstacles and 'R' is the robot.\
 >Each cell of the environment is 0.25m x 0.25m.
+<pre>
+ ex:
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       #---------R-----#----
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+       ---------------------
+</pre>
 
 **distanceAndAngleFromTarget.c**
 >Give your robot's coordinates and angle (xr,yr,theta).\
@@ -52,9 +76,9 @@
 >Get robot's target robocentric coordinates. (robot's axes instead of global)
 
 **wallDetection.c**
->Wall detection.
->Give the number of distance sensors (N) of a cylindrical robot (R=radius).
->Give the value of each sensor (val[i]).
+>Wall detection.\
+>Give the number of distance sensors (N) of a cylindrical robot (R=radius).\
+>Give the value of each sensor (val[i]).\
 >Get "YES" if the robot detects a wall, otherwise get "NO".
 <pre>
 "YES": 1) Two consecutive values are valid (< RANGE) and all the others are invalid (>= RANGE).
